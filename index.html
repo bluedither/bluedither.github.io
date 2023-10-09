@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title style=" font-size: 10px">Ning Jing's Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="finalfavi-01.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+    </style>
+    <video id="background-video" autoplay loop muted poster="assets\background.mp4">
+        <source src="assets\background.mp4" type="video/mp4">
+    </video>
+</head>
+
+<body>
+    <div class="border"></div>
+    <div class="overallflex">
+        <div class="header"></div>
+        <div class="background"></div>
+        <div class="flex-container">
+            <div class="topleft-container">
+                <div id="about" class="topleft" style="cursor: pointer;" onclick="toggleAboutPopup()">
+                    &#160;>&#160;About&#160;</div>
+                <div id="design" class="topleft" style="cursor: pointer;" onclick="toggleDesignPopup()">
+                    &#160;>&#160;Works&#160;</div>
+                <div id="writing" class="topleft" style="cursor: pointer;" onclick="toggleWritingPopup()">
+                    &#160;>&#160;Writing&#160;</div>
+            </div>
+            <div class="middle-container">
+                <div class="middle">
+                    <div id="writing-popup" style="display:none;" class="popup">
+                        <div id="writing-body-text" class="popup-container">
+                            <div class="popup-header-container">
+                                <div class="popup-header">Writing</div>
+                                <div class="popup-cross" style="cursor: pointer;" onclick="untoggleWritingPopup()">X
+                                </div>
+                            </div>
+                            <divclass="popup-body-container">
+                                <div class="popup-body">
+                                    <p>
+                                        <a href="https://lkcnhm.nus.edu.sg/forgotten-tales-of-ornithology-behind-bars-the-role-of-birds-in-wwii/"
+                                            target="_blank" rel="noopener noreferrer">Forgotten Tales of Ornithology
+                                            Behind Bars: 'The Role of Birds in WWII'</a> <br><br>
+                                        <a href="https://lkcnhm.nus.edu.sg/specialist-surgeon-by-day-expert-entomologist-by-night-an-interview-with-dr-francis-seow-choen/"
+                                            target="_blank" rel="noopener noreferrer">Specialist Surgeon by Day, Expert
+                                            Entomologist by Night: An Interview with Dr. Francis Seow-Choen</a> <br><br>
+                                        <a href="https://docs.google.com/document/d/1Om2L7P3AzSbEemw7bKmupPOfMMKEOb3p/edit?usp=drive_link&ouid=111643122985780660529&rtpof=true&sd=true"
+                                            target="_blank" rel="noopener noreferrer">Waiting for Godot and its Use of
+                                            Religious Motifs</a> <br><br>
+                                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0956566322007679?via%3Dihub"
+                                            target="_blank" rel="noopener noreferrer">From Hardware to Software:
+                                            Alienation in the Cyberspace</a><br><br>
+                                        <a href="https://docs.google.com/document/d/1OsMnieC0gs4k0_-d6vegsYVoinDA9Crs/edit?usp=drive_link&ouid=111643122985780660529&rtpof=true&sd=true"
+                                            target="_blank" rel="noopener noreferrer">Enzyme-free and isothermal
+                                            discrimination of microRNA point mutations using a DNA split proximity
+                                            circuit with turn-on fluorescence readout. Biosensors and Bioelectronics,
+                                            217, 114727.</a>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div id="design-popup" style="display:none;" class="popup">
+                        <div class="popup-container">
+                            <div class="popup-header-container">
+                                <div class="popup-header">Works</div>
+                                <div class="popup-cross" style="cursor: pointer;" onclick="untoggleDesignPopup()">X
+                                </div>
+                            </div>
+                            <div class="popup-body-container">
+                                <div id="design-body-text" class="popup-body">Coming soon... <br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="about-popup" style="display:none;" class="popup">
+                        <div class="popup-container">
+                            <div class="popup-header-container">
+                                <div class="popup-header">About</div>
+                                <div class="popup-cross" style="cursor: pointer;" onclick="untoggleAboutPopup()">X</div>
+                            </div>
+                            <div id="about-body-text" class="popup-body-container">
+                                <div class="popup-body">
+                                    <p> Hi I'm Ning Jing. <br>
+                                        I do a bit of everything, <br>
+                                        mostly multimedia design and writing. <br><br>
+                                        Currently working on: Finishing this website.<br><br>
+                                        <a href="mailto:wu.ning.jing.2001@gmail.com">Contact me</a> <br> <a
+                                            href="https://www.linkedin.com/in/wu-ningjing/" target="_blank"
+                                            rel="noopener noreferrer">LinkedIn</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomright-container">
+                <div class="bottomright">
+                    <p> &#160;Ningjing&#160;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header"></div>
+    </div>
+    </div>
+</body>
+
+</html>
